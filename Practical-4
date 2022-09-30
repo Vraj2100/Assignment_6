@@ -1,0 +1,20 @@
+package part_6;
+
+public class P4 extends Thread{
+	public void run(){
+		
+	}
+	public static void main(String[] args){
+		P4 FIRST = new P4(); 
+		P4 SECOND = new P4();
+		P4 THIRD = new P4();
+
+		FIRST.setPriority(3);
+		SECOND.setPriority(5);
+		THIRD.setPriority(7);
+
+		System.out.println("Priority of FIRST Thread:" + FIRST.getPriority());
+		System.out.println("Priority of SECOND Thread:" + SECOND.getPriority());
+		System.out.println("Priority of THIRD Thread:" + THIRD.getPriority());
+		}
+}
